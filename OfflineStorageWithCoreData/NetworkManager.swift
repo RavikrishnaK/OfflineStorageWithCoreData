@@ -15,7 +15,7 @@ class NetworkManager {
     private init() {}
     
     func uploadRequiredInfo(offlineData data:[Tasks], completionHandler: @escaping (Result<Void, Error>) -> Void) {
-        // Here we should change url as per our requirement
+        // Here we should replace url as per our requirement
         guard let url = URL(string: "https://yourserver.com/upload") else {
             completionHandler(.failure(NSError(domain: "Invalid URL", code: -1)))
             return
@@ -55,3 +55,4 @@ class GetPersistentContext {
         }
     }
 }
+
